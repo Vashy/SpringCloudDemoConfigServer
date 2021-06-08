@@ -24,6 +24,10 @@ dependencies {
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
+springBoot {
+  mainClass.set("it.vashykator.spring.cloud.config.SpringCloudConfigApplicationKt")
+}
+
 dependencyManagement {
 	imports {
 		mavenBom("org.springframework.cloud:spring-cloud-dependencies:${property("springCloudVersion")}")
