@@ -5,4 +5,5 @@ Run the following command to build the docker image:
 
 And then run it:
 
-    docker run -it --rm -p 8888:8888 config-server:latest
+    docker run -it --rm -p 8888:8888 --net=spring-cloud-app --name=config-server config-server:latest
+
